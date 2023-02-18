@@ -11,9 +11,13 @@ app.use(express.static('public'));
 
 const indexRouter = require('./src/routes/index.route')
 
+const loginApiRouter = require('./src/routes/api/login.route')
+
 // Setup Routes
 
 app.use('/', indexRouter)
+
+app.use('/api/login', loginApiRouter)
 
 app.get('*', function(req, res){
     res.redirect('/')
@@ -26,14 +30,16 @@ const port = 3000
 
 // Load MongoDB
 
-const dbo = require('./db/conn')
-
-dbo.connectToServer(function (err) {
-    if (err) {
-        console.error(err);
-        process.exit();
-    }
-    server.listen(port, () => {
-        console.log(`Example app listening on port ${port}`)
-    })
-});
+// const dbo = require('./db/conn')
+server.listen(port, () => {
+    console.log(`Example app listening on port ${port}`)
+})
+// dbo.connectToServer(function (err) {
+//     if (err) {
+//         console.error(err);
+//         process.exit();
+//     }
+//     server.listen(port, () => {
+//         console.log(`Example app listening on port ${port}`)
+//     })
+// });
