@@ -13,10 +13,34 @@ async function create(req, res, next) {
     },
     serverList: [
       {
-        "countryCode": 0,
-        "server": "p195.panda002.net",
-        "username": "123",
-        "password": "qwerREWQ!!",
+        "id": 0,
+        "countryCode": "KR",
+        "uri": "p195.panda002.net",
+        "name": "한국 1",
+      },
+      {
+        "id": 1,
+        "countryCode": "KR",
+        "uri": "p195.panda002.net",
+        "name": "한국 2",
+      },
+      {
+        "id": 2,
+        "countryCode": "KR",
+        "uri": "p195.panda002.net",
+        "name": "한국 3",
+      },
+      {
+        "id": 3,
+        "countryCode": "KR",
+        "uri": "p195.panda002.net",
+        "name": "한국 4",
+      },
+      {
+        "id": 4,
+        "countryCode": "KR",
+        "uri": "p195.panda002.net",
+        "name": "한국 5",
       }
     ]
   })
