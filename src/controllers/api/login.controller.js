@@ -41,6 +41,48 @@ async function create(req, res, next) {
         "countryCode": "KR",
         "uri": "p195.panda002.net",
         "name": "한국 5",
+      },
+      {
+        "id": 5,
+        "countryCode": "KR",
+        "uri": "p195.panda002.net",
+        "name": "한국 6",
+      },
+      {
+        "id": 6,
+        "countryCode": "KR",
+        "uri": "p195.panda002.net",
+        "name": "한국 7",
+      },
+      {
+        "id": 7,
+        "countryCode": "KR",
+        "uri": "p195.panda002.net",
+        "name": "한국 8",
+      },
+      {
+        "id": 8,
+        "countryCode": "KR",
+        "uri": "p195.panda002.net",
+        "name": "한국 9",
+      },
+      {
+        "id": 9,
+        "countryCode": "KR",
+        "uri": "p195.panda002.net",
+        "name": "한국 10",
+      },
+      {
+        "id": 10,
+        "countryCode": "KR",
+        "uri": "p195.panda002.net",
+        "name": "한국 11",
+      },
+      {
+        "id": 11,
+        "countryCode": "KR",
+        "uri": "p195.panda002.net",
+        "name": "한국 12",
       }
     ]
   })
