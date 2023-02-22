@@ -8,8 +8,22 @@ async function create(req, res, next) {
   return res.status(200).json({
     success: true,
     user: {
-      username: "heist223",
-      password: "bnmg0416"
+      name: "heist223",
+      joinedAt: 1677065015998,
+      subscriptions: [
+        {
+          label: "30일 이용권",
+          paymentAmount: 100,
+          purchasedAt: 1677065015999,
+          willExpireAt: 1677065016100 
+        },
+        {
+          label: "90일 이용권",
+          paymentAmount: 300,
+          purchasedAt: 1677065015999,
+          willExpireAt: 1677065016100 
+        }
+      ],
     },
     serverList: [
       {
