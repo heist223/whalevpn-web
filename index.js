@@ -30,16 +30,13 @@ const port = 3000
 
 // Load MongoDB
 
-// const dbo = require('./db/conn')
-server.listen(port, () => {
-    console.log(`Example app listening on port ${port}`)
-})
-// dbo.connectToServer(function (err) {
-//     if (err) {
-//         console.error(err);
-//         process.exit();
-//     }
-//     server.listen(port, () => {
-//         console.log(`Example app listening on port ${port}`)
-//     })
-// });
+const dbo = require('./db/conn')
+dbo.connectToServer(function (err) {
+    if (err) {
+        console.error(err);
+        process.exit();
+    }
+    server.listen(port, () => {
+        console.log(`Example app listening on port ${port}`)
+    })
+});

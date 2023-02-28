@@ -1,5 +1,5 @@
 const { MongoClient } = require('mongodb');
-const connectionString = "<YOUR-MONGODB-URI>";
+const connectionString = "mongodb+srv://heist223:FN4Fi2oSDXXK0XnA@cluster0.f0pnbf7.mongodb.net/?retryWrites=true&w=majority";
 const client = new MongoClient(connectionString, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
@@ -7,7 +7,7 @@ const client = new MongoClient(connectionString, {
 
 let dbConnection;
 
-let usersCollection;
+let accountsCollection;
 
 module.exports = {
   connectToServer: function (callback) {
@@ -16,9 +16,9 @@ module.exports = {
         return callback(err);
       }
 
-      dbConnection = db.db('<DATABASE-NAME>');
+      dbConnection = db.db('whalevpn');
 
-      usersCollection = dbConnection.collection("<COLLECTION-NAME>")
+      accountsCollection = dbConnection.collection("accounts")
       console.log('Successfully connected to MongoDB.');
 
       return callback();
@@ -29,7 +29,7 @@ module.exports = {
     return dbConnection;
   },
 
-  getUsersCollection: function() {
-    return usersCollection
+  getAccountsCollection: function() {
+    return accountsCollection 
   },
 };
