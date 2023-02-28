@@ -1,12 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="utf-8"/>
-<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Document</title>
+    <meta charset="utf-8" />
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <link href="../css/pico.min.css">
+    <title>Whale VPN</title>
 </head>
+
 <body>
-    <h1>Hello World!</h1>
+    <nav class="container">
+        <ul>
+            <li><strong>Whale</strong>.vpn</li>
+        </ul>
+        <ul>
+            <li><a href="https://picocss.com#examples" class="secondary">Examples</a></li>
+            <li><a href="https://picocss.com/docs/" class="secondary">Docs</a></li>
+        </ul>
+    </nav>
+    <header style="margin-bottom: 250px;">
+        <div class="container">
+            <h1>궁극적인 네트워킹 도구</h1>
+            <p>Made for <code>power</code> user.</p>
+            <p><a href="docs/" role="button" class="secondary" aria-label="Documentation">시작하기</a> <a
+                    href="https://github.com/picocss/pico/archive/refs/heads/master.zip" role="button"
+                    class="contrast outline" aria-label="Download">다운로드</a></p>
+            <p><code><small>Less than 10 kB minified and gzipped</small></code></p>
+        </div>
+    </header>
+    <main>
+        <section id="principles">
+            <div class="container">
+                <hgroup>
+                    <h2>여러분의
+                        디지털 활동을 안전하게 보호하세요</h2>
+                    <h3>모든 이들로부터 인터넷 활동을 숨겨보세요. ISP, 해커, 광고업체 및 정부를 포함해서요.</h3>
+                </hgroup>
+                <div class="grid">
+                    <div><svg aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 640 512" height="16px">
+                            <path fill="currentColor"
+                                d="M278.9 511.5l-61-17.7c-6.4-1.8-10-8.5-8.2-14.9L346.2 8.7c1.8-6.4 8.5-10 14.9-8.2l61 17.7c6.4 1.8 10 8.5 8.2 14.9L293.8 503.3c-1.9 6.4-8.5 10.1-14.9 8.2zm-114-112.2l43.5-46.4c4.6-4.9 4.3-12.7-.8-17.2L117 256l90.6-79.7c5.1-4.5 5.5-12.3.8-17.2l-43.5-46.4c-4.5-4.8-12.1-5.1-17-.5L3.8 247.2c-5.1 4.7-5.1 12.8 0 17.5l144.1 135.1c4.9 4.6 12.5 4.4 17-.5zm327.2.6l144.1-135.1c5.1-4.7 5.1-12.8 0-17.5L492.1 112.1c-4.8-4.5-12.4-4.3-17 .5L431.6 159c-4.6 4.9-4.3 12.7.8 17.2L523 256l-90.6 79.7c-5.1 4.5-5.5 12.3-.8 17.2l43.5 46.4c4.5 4.9 12.1 5.1 17 .6z">
+                            </path>
+                        </svg>
+                        <h4>안전하게 여행하기</h4>
+                        <p>보호되지 않은 네트워크를 사용하는 동안 디지털 자유와 보안을 유지하세요.</p>
+                    </div>
+                    <div><svg aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 512 512" height="16px">
+                            <path fill="currentColor"
+                                d="M512 0C460.22 3.56 96.44 38.2 71.01 287.61c-3.09 26.66-4.84 53.44-5.99 80.24l178.87-178.69c6.25-6.25 16.4-6.25 22.65 0s6.25 16.38 0 22.63L7.04 471.03c-9.38 9.37-9.38 24.57 0 33.94 9.38 9.37 24.59 9.37 33.98 0l57.13-57.07c42.09-.14 84.15-2.53 125.96-7.36 53.48-5.44 97.02-26.47 132.58-56.54H255.74l146.79-48.88c11.25-14.89 21.37-30.71 30.45-47.12h-81.14l106.54-53.21C500.29 132.86 510.19 26.26 512 0z">
+                            </path>
+                        </svg>
+                        <h4>비공개적으로 검색하기</h4>
+                        <p>인터넷 활동을 암호화하여 누구도 당신을 추적하거나 데이터를 도용하지 못하게 하십시오.</p>
+                    </div>
+                    <div><svg aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 448 512" height="16px">
+                            <path fill="currentColor"
+                                d="M448 344v112a23.94 23.94 0 0 1-24 24H312c-21.39 0-32.09-25.9-17-41l36.2-36.2L224 295.6 116.77 402.9 153 439c15.09 15.1 4.39 41-17 41H24a23.94 23.94 0 0 1-24-24V344c0-21.4 25.89-32.1 41-17l36.19 36.2L184.46 256 77.18 148.7 41 185c-15.1 15.1-41 4.4-41-17V56a23.94 23.94 0 0 1 24-24h112c21.39 0 32.09 25.9 17 41l-36.2 36.2L224 216.4l107.23-107.3L295 73c-15.09-15.1-4.39-41 17-41h112a23.94 23.94 0 0 1 24 24v112c0 21.4-25.89 32.1-41 17l-36.19-36.2L263.54 256l107.28 107.3L407 327.1c15.1-15.2 41-4.5 41 16.9z">
+                            </path>
+                        </svg>
+                        <h4>사용자 IP 변경</h4>
+                        <p>다른 IP 주소를 사용하여 프라이버시를 확보하고 추적을 피하세요.</p>
+                    </div>
+                    <div><svg aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 512 512" height="16px">
+                            <path fill="currentColor"
+                                d="M8 256c0 136.966 111.033 248 248 248s248-111.034 248-248S392.966 8 256 8 8 119.033 8 256zm248 184V72c101.705 0 184 82.311 184 184 0 101.705-82.311 184-184 184z">
+                            </path>
+                        </svg>
+                        <h4>번개처럼 빠른 속도</h4>
+                        <p>업계 내 가장 빠른 VPN으로 라이브 스포츠를 시청하고, 큰 파일을 다운로드하고, 온라인 게임을 플레이해보세요.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="examples" data-theme="light">
+            <div class="container">
+                <hgroup>
+                    <h2>플랜</h2>
+                    <h3>플랜은 다음을 포함합니다.</h3>
+                </hgroup>
+                <label for="select">기기 개수</label>
+                <select id="select" name="select" required="">
+                    <option value="" selected="">1개</option>
+                    <option>2개</option>
+                    <option>3개</option>
+                    <option>4개</option>
+                    <option>5개</option>
+                </select>
+                <div class="grid">
+                    <div><a href="examples/preview/"><small>1개월 사용</small>
+                            <div class="example preview">
+                                <div class="desktop"></div>
+                                <div class="mobile"></div>
+                            </div>
+                        </a>
+                    </div>
+                    <div><a href="examples/classless/"><small>3개월 사용</small>
+                            <div class="example classless">
+                                <div class="desktop"></div>
+                                <div class="mobile"></div>
+                            </div>
+                        </a>
+                    </div>
+                    <div><a href="examples/basic-template/"><small>6개월 사용</small>
+                            <div class="example basic-template">
+                                <div class="desktop"></div>
+                                <div class="mobile"></div>
+                            </div>
+                        </a>
+                    </div>
+                    <div><a href="examples/company/"><small>12개월 사용</small>
+                            <div class="example company">
+                                <div class="desktop"></div>
+                                <div class="mobile"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="why">
+            <div class="container">
+                <hgroup>
+                    <h2>VPN의 필수 항목</h2>
+                    <h3>수많은 사람들이 WhaleVPN 을 선택한 이유</h3>
+                </hgroup>
+                <ul class="check">
+                    <li>특정 지역에서는 허용되지 않는 컨텐츠도 마음껏 접속.</li>
+                    <li>AES 256-bit 암호화 방식을 통해 강력한 암호화 수준 보유.</li>
+                    <li>당신의 개인정보를 해커로부터 안전하게 보호.</li>
+                    <li>정부에 의해 차단된 유명한 웹사이트 또는 앱 접속 우회. </li>
+                </ul>
+                <div data-theme="invalid">
+                    <pre><code>&lt;<b>form</b> <i>class</i>=<u>"form form-modifier margin padding align"</u>&gt;
+  &lt;<b>div</b> <i>class</i>=<u>"input-wrapper input-wrapper-modifier margin padding"</u>&gt;
+    &lt;<b>input</b> <i>type</i>=<u>"text"</u> <i>class</i>=<u>"input input-type-modifier input-style-modifier input-size-modifier"</u>&gt;
+  &lt;/<b>div</b>&gt;
+  &lt;<b>button</b> <i>type</i>=<u>"submit</u>" <i>class</i>=<u>"button button-style-modifier button-size-modifier action-trigger margin padding"</u>&gt;
+    Action
+  &lt;/<b>button</b>&gt;
+&lt;/<b>form</b>&gt;</code></pre>
+                </div>
+                <div data-theme="valid">
+                    <pre><code>&lt;<b>form</b>&gt;
+  &lt;<b>input</b> <i>type</i>=<u>"text"</u>&gt;
+  &lt;<b>button</b> <i>type</i>=<u>"submit"</u>&gt;Action&lt;/<b>button</b>&gt;
+&lt;/<b>form</b>&gt;</code></pre>
+                </div>
+            </div>
+        </section>
+        <section id="star" data-theme="light" aria-label="Star Pico on GitHub">
+            <div class="container">
+                <p>Give us a Star on GitHub:<iframe
+                        src="https://ghbtns.com/github-btn.html?user=picocss&amp;repo=pico&amp;type=star&amp;count=true&amp;size=large"
+                        frameborder="0" scrolling="0" width="160" height="30" title="GitHub"></iframe></p>
+            </div>
+        </section>
+    </main>
+    <footer><div class="container"><ul><li><a href="https://picocss.com/#examples" class="contrast">Examples</a></li><li><a href="https://picocss.com/docs/" class="contrast">Documentation</a></li><li><a href="https://github.com/picocss/pico" class="contrast">GitHub</a></li><li><a href="https://twitter.com/picocss" class="contrast">Twitter</a></li></ul><ul><li><small>Made by <a href="https://lucaslarroche.com/" class="secondary">Lucas Larroche</a></small></li><li><small>Code licensed <a href="https://github.com/picocss/pico/blob/master/LICENSE.md" class="secondary">MIT</a></small></li><li><small><a href="https://picocss.com/third-party/" class="secondary">Third-Party Tools</a></small></li></ul></div></footer>
+
 </body>
+
 </html>
