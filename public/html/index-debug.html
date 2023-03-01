@@ -6,6 +6,7 @@
     <meta content="IE=edge" http-equiv="X-UA-Compatible" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <link href="../css/pico.min.css">
+    <link href="../css/index.css">
     <title>Whale VPN</title>
 </head>
 
@@ -83,39 +84,67 @@
                     <h2>플랜</h2>
                     <h3>플랜은 다음을 포함합니다.</h3>
                 </hgroup>
-                <label for="select">기기 개수</label>
-                <select id="select" name="select" required="">
-                    <option value="" selected="">1개</option>
-                    <option>2개</option>
-                    <option>3개</option>
-                    <option>4개</option>
-                    <option>5개</option>
-                </select>
                 <div class="grid">
-                    <div><a href="examples/preview/"><small>1개월 사용</small>
+                    <div>
+                        <label for="select">기기 개수</label>
+                        <select id="select-device" name="select" required="">
+                            <option value=1 selected="">1개</option>
+                            <option value=2>2개</option>
+                            <option value=3>3개</option>
+                            <option value=4>4개</option>
+                            <option value=5>5개</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="select">국가</label>
+                        <select id="select-country" name="select" required="">
+                            <option value="ko" selected="">한국</option>
+                            <option value="cn">중국</option>
+                        </select>
+                    </div>
+
+                </div>
+                <div class="grid">
+                    <div><a><small>1개월 사용</small>
                             <div class="example preview">
-                                <div class="desktop"></div>
+                                <div class="desktop">
+                                    <div class="price">
+                                        <span id="price-1"></span>
+                                    </div>
+                                </div>
                                 <div class="mobile"></div>
                             </div>
                         </a>
                     </div>
-                    <div><a href="examples/classless/"><small>3개월 사용</small>
+                    <div><a><small>3개월 사용</small>
                             <div class="example classless">
-                                <div class="desktop"></div>
+                                <div class="desktop">
+                                    <div class="price">
+                                        <span id="price-2"></span>
+                                    </div>
+                                </div>
                                 <div class="mobile"></div>
                             </div>
                         </a>
                     </div>
-                    <div><a href="examples/basic-template/"><small>6개월 사용</small>
+                    <div><a><small>6개월 사용</small>
                             <div class="example basic-template">
-                                <div class="desktop"></div>
+                                <div class="desktop">
+                                    <div class="price">
+                                        <span id="price-3"></span>
+                                    </div>
+                                </div>
                                 <div class="mobile"></div>
                             </div>
                         </a>
                     </div>
-                    <div><a href="examples/company/"><small>12개월 사용</small>
+                    <div><a><small>12개월 사용</small>
                             <div class="example company">
-                                <div class="desktop"></div>
+                                <div class="desktop">
+                                    <div class="price">
+                                        <span id="price-4"></span>
+                                    </div>
+                                </div>
                                 <div class="mobile"></div>
                             </div>
                         </a>
@@ -164,5 +193,7 @@
     <footer><div class="container"><ul><li><a href="https://picocss.com/#examples" class="contrast">Examples</a></li><li><a href="https://picocss.com/docs/" class="contrast">Documentation</a></li><li><a href="https://github.com/picocss/pico" class="contrast">GitHub</a></li><li><a href="https://twitter.com/picocss" class="contrast">Twitter</a></li></ul><ul><li><small>Made by <a href="https://lucaslarroche.com/" class="secondary">Lucas Larroche</a></small></li><li><small>Code licensed <a href="https://github.com/picocss/pico/blob/master/LICENSE.md" class="secondary">MIT</a></small></li><li><small><a href="https://picocss.com/third-party/" class="secondary">Third-Party Tools</a></small></li></ul></div></footer>
 
 </body>
+
+<script src="../views/index.view.js"></script>
 
 </html>
