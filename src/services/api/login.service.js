@@ -15,13 +15,14 @@ async function login({activationKey, deviceId}) {
     let loggedInDevicesCount = account.loggedInDevices.length
     let maxDeviceCount = account.maxDeviceCount
 
-    if (loggedInDevicesCount >= maxDeviceCount) return {
+    let deviceIdAlreadyExists = account.loggedInDevices.indexOf(deviceId) > -1
+
+    if (loggedInDevicesCount >= maxDeviceCount && !deviceIdAlreadyExists) return {
         success: false,
-        message: `현재 로그인된 기기가 ${loggedInDevicesCount}개로 `,
+        message: '최대 로그인 가능한 기기 개수를 초과했습니다.',
         code: 200
     }
 
-    let deviceIdAlreadyExists = account.loggedInDevices.indexOf(deviceId) > -1
     if (!deviceIdAlreadyExists) {
         let updateRes = await accountsCollection.updateOne(
             {activationKey: activationKey},
