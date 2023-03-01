@@ -1,6 +1,6 @@
 const dbo = require('../../../db/conn')
 
-async function findAccount({activationKey}) {
+async function login({activationKey, deviceId}) {
     const accountsCollection = dbo.getAccountsCollection()
     let accounts = await accountsCollection.find({activationKey: activationKey})
     accounts = await accounts.toArray()
@@ -10,6 +10,27 @@ async function findAccount({activationKey}) {
         success: false,
         message: "올바르지 않거나 만료된 활성화 키 입니다.",
         code: 401
+    }
+
+    let loggedInDevicesCount = account.loggedInDevices.length
+    let maxDeviceCount = account.maxDeviceCount
+
+    if (loggedInDevicesCount >= maxDeviceCount) return {
+        success: false,
+        message: `현재 로그인된 기기가 ${loggedInDevicesCount}개로 `,
+        code: 200
+    }
+
+    let deviceIdAlreadyExists = account.loggedInDevices.indexOf(deviceId) > -1
+    if (!deviceIdAlreadyExists) {
+        let updateRes = await accountsCollection.updateOne(
+            {activationKey: activationKey},
+            {
+                $push: {
+                    loggedInDevices: deviceId 
+                }
+            }
+        )
     }
 
     return {
@@ -97,5 +118,5 @@ async function findAccount({activationKey}) {
 }
 
 module.exports = {
-    findAccount
+   login 
 }

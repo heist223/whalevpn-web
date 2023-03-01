@@ -12,12 +12,14 @@ app.use(express.static('public'));
 const indexRouter = require('./src/routes/index.route')
 
 const loginApiRouter = require('./src/routes/api/login.route')
+const logoutApiRouter = require('./src/routes/api/logout.route')
 
 // Setup Routes
 
 app.use('/', indexRouter)
 
 app.use('/api/login', loginApiRouter)
+app.use('/api/logout', logoutApiRouter)
 
 app.get('*', function(req, res){
     res.redirect('/')
